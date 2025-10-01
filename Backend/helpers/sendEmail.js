@@ -19,6 +19,11 @@ const templates = {
     text: `Hi ${username}, reset your password here: ${link}. This link is valid for 15 minutes.`,
     html: `<h2>Password Reset</h2><p>Hi ${username}, click <a href="${link}">here</a> to reset your password. This link is valid for <b>15 minutes</b>.</p>`,
   }),
+  passwordChanged: (username, link) => ({
+    subject: "Your Password Change Sucessfuly",
+    text: `Hi ${username}, login: ${link}.`,
+    html: `<h2>Password Change </h2><p>Hi ${username}, click <a href="${link}">here</a> </b>.</p>`,
+  })
 };
 
 // Main email sender
